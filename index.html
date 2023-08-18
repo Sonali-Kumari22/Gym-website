@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kims Fitness</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Montserrat:wght@500;600&family=Prompt:wght@300&family=Roboto+Mono:ital@0;1&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* CSS reset */
+      body {
+        font-family: "Jost", sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("background.jpg");
+        background-repeat: no-repeat;
+        background-size: 2671px;
+      }
+      .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 30px;
+        top: 20px;
+      }
+      .left img {
+        width: 60px;
+        filter: invert(100%);
+        padding: 2px 19px;
+      }
+
+      .left div {
+        line-height: 24px;
+        text-align: center;
+      }
+      .mid {
+        display: block;
+        width: 50%;
+        margin: 6px auto;
+        /* border: 2px solid plum; */
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 18px;
+        /* border: 2px solid green; */
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline;
+        font-size: 22px;
+      }
+      .navbar li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 7px;
+      }
+      .navbar li a:hover,
+      .navbar li a:active {
+        text-decoration: underline;
+        color: grey;
+      }
+      .btn {
+        background-color: black;
+        color: white;
+        margin: 0px 10px;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "Jost", sans-serif;
+      }
+      .btn:hover {
+        background-color: rgb(231, 186, 186);
+      }
+      .container {
+        /* border: 2px solid white; */
+        padding: 75px;
+        margin: 56px 25px;
+        width: 33%;
+        border-radius: 28px;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      .form-group input {
+        border: 2px solid palevioletred;
+        margin: 10px auto;
+        padding: 6px;
+        width: 350px;
+        text-align: center;
+        display: block;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: "Jost", sans-serif;
+      }
+      .container button {
+        display: block;
+        width: 72%;
+        margin: 18px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- div for logo -->
+      <div class="left">
+        <img src="logo.png" alt="logo" />
+        <div>Kims Fitness</div>
+      </div>
+      <!-- div for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- div for buttons -->
+      <div class="right">
+        <button class="btn">Login</button>
+        <button class="btn">Signup</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best GYM of Hyderabad</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Locality" />
+        </div>
+      </form>
+      <button class="btn">Submit</button>
+    </div>
+  </body>
+</html>
